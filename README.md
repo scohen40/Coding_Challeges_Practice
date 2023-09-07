@@ -50,28 +50,28 @@ Ensure that you have the necessary compilers or environments set up to execute t
 ## Challenges
 
 This is my  checklist of all completed and uncompleted challenges. 
-As the list grows it will eventually be reorganized for ease of browsing. 
+As the list grows it will be reorganized for ease of browsing. 
 
-- [x]**[Excel Column Number](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Excel_Column_Number)**: convert an iteger of base-10 to equivalent Excel column number of base-26
-- [x]**[Decimal to Hexadecimal](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Decimal_To_Hexadecimal)**: convert a base-10 integer to a base-16 integer
-- [ ]**[Hexadecimal to Base64](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Hexadecimal_To_Base64)**: convert a base-16 string to a base-64 string
-- [ ]**[Fixed XOR](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Fixed_XOR)**: write a function that takes two equal-length buffers and produces their XOR combination
-- [ ]**[Single-byte XOR cipher](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Single-byte_XOR_cypher)**: decrypt the xor'd message
-- [x]**[Single Number Problem](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Single_Number_Problem)**: determine which integer in an array appears only once
-- [x]**[Make Change](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Make_Change)**: calculate and return a list of coins adding up to the requested total
-- [x]**[Pack Weights](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Pack_Weights)**: pack backpacks with as much weight each can fit until there are is no weight left to pack
-- [x]**[Find Light](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Find_Light)**: find the location of a 2x2 light within a black image
-- [ ]**[Find Center](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Find_Center)**: find the center of the source of light in an image
-- [x]**[Tic Tac Toe](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Tic_Tac_Toe)**: determine the winner of a tic tac toe game
-- [x]**[Which Light](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Which_Light)**: determine which kind of light bulb was turned on based on the brightness integer values
-- [ ]**[Run Length Encoding](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Run_Length_Encoding)**: compress an image into its rgb counts 
-- [x]**[Spiral](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Spiral)**: create a 2D array that when printed outputs a spiral
-- [ ]**[Letter Count](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Letter_Count)**: count each letter in a string
-- [ ]**[Word Count](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Word_Count)**: count each word in a string
-- [ ]**[Natural Language Calculator]()**:
-- [ ]**[Analyze Logs]()**:
-- [ ]**[Attatch Actors To Movies]()**:
-- [ ]**[Find Sci-Fi Actors]()**:
+- [x] **[Excel Column Number](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Excel_Column_Number)**: convert an iteger of base-10 to equivalent Excel column number of base-26
+- [x] **[Decimal to Hexadecimal](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Decimal_To_Hexadecimal)**: convert a base-10 integer to a base-16 integer
+- [ ] **[Hexadecimal to Base64](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Hexadecimal_To_Base64)**: convert a base-16 string to a base-64 string
+- [ ] **[Fixed XOR](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Fixed_XOR)**: write a function that takes two equal-length buffers and produces their XOR combination
+- [ ] **[Single-byte XOR cipher](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Single-byte_XOR_cypher)**: decrypt the xor'd message
+- [x] **[Single Number Problem](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Single_Number_Problem)**: determine which integer in an array appears only once
+- [x] **[Make Change](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Make_Change)**: calculate and return a list of coins adding up to the requested total
+- [x] **[Pack Weights](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Pack_Weights)**: pack backpacks with as much weight each can fit until there are is no weight left to pack
+- [x] **[Find Light](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Find_Light)**: find the location of a 2x2 light within a black image
+- [ ] **[Find Center](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Find_Center)**: find the center of the source of light in an image
+- [x] **[Tic Tac Toe](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Tic_Tac_Toe)**: determine the winner of a tic tac toe game
+- [x] **[Which Light](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Which_Light)**: determine which kind of light bulb was turned on based on the brightness integer values
+- [ ] **[Run Length Encoding](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Run_Length_Encoding)**: compress an image into its rgb counts 
+- [x] **[Spiral](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Spiral)**: create a 2D array that when printed outputs a spiral
+- [ ] **[Letter Count](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Letter_Count)**: count each letter in a string
+- [ ] **[Word Count](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Word_Count)**: count each word in a string
+- [ ] **[Natural Language Calculator]()**:
+- [ ] **[Analyze Logs]()**:
+- [ ] **[Attatch Actors To Movies]()**:
+- [ ] **[Find Sci-Fi Actors]()**:
 
 ## Contributing
   
