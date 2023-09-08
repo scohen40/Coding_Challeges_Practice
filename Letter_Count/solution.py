@@ -71,3 +71,28 @@ def dictionary_letter_count(input_string):
   return result
       
 print(dictionary_letter_count("abcdefgabcedfqhafkhfiugaekjfigh;oiaer"))
+print(dictionary_letter_count("1564165fdsgg44@#*$&#"))
+
+
+def dictionary_letter_count_2(input_string):
+  result = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  result_map = {}
+  ## loop over each letter
+  for letter in input_string:
+    ## figure out which letter this is, and where it goes
+    ## do it with numbers
+    # letter_position = (ord(letter) - 65) % 32
+    
+    ## do it with string transformations
+    normalized_letter = letter.lower()
+    ## increment the count for that letter
+    current_letter_count = result_map.get(normalized_letter,0)
+    result_map[normalized_letter] = current_letter_count + 1
+
+  ## format the counts into an array (if not already done)
+  for letter_address in range(97,123):
+    result[letter_address - 97] = result_map.get(chr(letter_address),0)
+  ## return the array
+  return result
+
+print(letter_count("siufoamswABCabcdefgh"))
