@@ -67,7 +67,7 @@ As the list grows it will be reorganized for ease of browsing.
 - [ ] **[Run Length Encoding](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Run_Length_Encoding)**: compress an image into its rgb counts 
 - [x] **[Spiral](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Spiral)**: create a 2D array that when printed outputs a spiral
 - [x] **[Letter Count](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Letter_Count)**: count each letter in a string
-- [ ] **[Word Count](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Word_Count)**: count each word in a string
+- [x] **[Word Count](https://github.com/scohen40/Coding_Challeges_Practice/tree/main/Word_Count)**: count each word in a string
 - [ ] **[Natural Language Calculator]()**:
 - [ ] **[Analyze Logs]()**:
 - [ ] **[Attatch Actors To Movies]()**:
