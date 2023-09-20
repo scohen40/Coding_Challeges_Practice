@@ -68,7 +68,7 @@ As the list grows it will be reorganized for ease of browsing.
 - [x] **[Spiral](Spiral)**: create a 2D array that when printed outputs a spiral
 - [x] **[Letter Count](Letter_Count)**: count each letter in a string
 - [x] **[Word Count](Word_Count)**: count each word in a string
-- [ ] **[Natural Language Calculator](Natural_Language_Calculator)**: convert a string into a number
+- [ ] **[Natural Language Calculator](Natural_Language_Calculator)**: solve a mathematical expression that is input as words in a string
 - [ ] **[Analyze Logs]()**:
 - [ ] **[Attatch Actors To Movies]()**:
 - [ ] **[Find Sci-Fi Actors]()**:
