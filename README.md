@@ -16,11 +16,11 @@ This repository is a structured compilation of my solutions to various coding ch
 ## Overview
 
 Within this repository, each challenge has its designated folder. 
-Within each folder there is a file for my solution(s) and, if available, a file for the solution(s) given for reference ( I usally hide the given solution(s) until I have completed my own or reached a roadblock).
+Within each folder there is a file for my solution(s) and, if available, a file for the solution(s) given for reference.
 My solution files include:
 * a clear description of the problem statement with relevant examples
 * my plan(s) and/or solution(s) with comment documentation
-* sometimes notes on the nuances of the problem, reflections on the solution(s) approach(es), the runtime(s), or the functionality/lackthereof of each attempt.
+* sometimes notes on the nuances of the problem or reflections on the approach, runtime, or functionality of each attempt.
 
 ## Languages and Environments
 
@@ -49,10 +49,10 @@ Ensure that you have the necessary compilers or environments set up to execute t
 
 ## Challenges
 
-This is my  checklist of all completed and uncompleted challenges. 
+This is my checklist of all completed and uncompleted challenges. 
 As the list grows it will be reorganized for ease of browsing. 
 
-- [x] **[Excel Column Number](Excel_Column_Number)**: convert an iteger of base-10 to equivalent Excel column number of base-26
+- [x] **[Excel Column Number](Excel_Column_Number)**: convert an integer of base-10 to equivalent Excel column number of base-26
 - [x] **[Decimal to Hexadecimal](Decimal_To_Hexadecimal)**: convert a base-10 integer to a base-16 integer
 - [ ] **[Hexadecimal to Base64](Hexadecimal_To_Base64)**: convert a base-16 string to a base-64 string
 - [ ] **[Fixed XOR](Fixed_XOR)**: write a function that takes two equal-length buffers and produces their XOR combination
