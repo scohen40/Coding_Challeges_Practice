@@ -96,6 +96,7 @@ def analyze_logs(logsString):
 
         #find/add all of that to the logsMap and add 1 to the count at that spot
         ## TO DO : SPLIT THE FOLLOWING STATEMENT UP TO ADD EACH PIECE TO THE MAP INDIVIDUALLY, DOING IT ALL TOGETHER DOESN'T WORK
+        ## 1.5 hours until here
         logsMap[logType][logCode][logTitle][logMessage] = logsMap.get(logType, logCode).get(logCode, logTitle).get(logTitle, logMessage).get(logMessage, 0) + 1
 
     return logsMap
