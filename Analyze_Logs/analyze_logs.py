@@ -62,6 +62,7 @@ output["WARNING"]["403"]["Forbidden"]["No token in request parameters"] # 3
 # When printed it will more likely look like this:
 printed_output = {'WARNING': {'403': {'Forbidden': {'No token in request parameters': 3}}}, 'ERROR': {'500': {'Server Error': {'int is not subscriptable': 8}}}, 'INFO': {'200': {'OK': {'Login Successful': 6, 'User sent a message': 6}}}}
 
+#1st Attempt, 1.75 hours
 #assuptions
 #- each log is ended by a newline character
 def analyze_logs(logsString):
@@ -95,9 +96,10 @@ def analyze_logs(logsString):
         logMessage = ' '.join(log[currentIndex:])
 
         #find/add all of that to the logsMap and add 1 to the count at that spot
-        ## TO DO : SPLIT THE FOLLOWING STATEMENT UP TO ADD EACH PIECE TO THE MAP INDIVIDUALLY, DOING IT ALL TOGETHER DOESN'T WORK
-        ## 1.5 hours until here
-        logsMap[logType][logCode][logTitle][logMessage] = logsMap.get(logType, logCode).get(logCode, logTitle).get(logTitle, logMessage).get(logMessage, 0) + 1
+        logsMap[logType] = logsMap.get(logType, {})
+        logsMap[logType][logCode] = logsMap[logType].get(logCode, {})
+        logsMap[logType][logCode][logTitle] = logsMap[logType][logCode].get(logTitle, {})
+        logsMap[logType][logCode][logTitle][logMessage] = logsMap[logType][logCode][logTitle].get(logMessage, 0) + 1
 
     return logsMap
 
