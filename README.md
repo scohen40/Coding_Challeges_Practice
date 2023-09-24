@@ -69,7 +69,7 @@ As the list grows it will be reorganized for ease of browsing.
 - [x] **[Letter Count](Letter_Count)**: count each letter in a string
 - [x] **[Word Count](Word_Count)**: count each word in a string
 - [x] **[Natural Language Calculator](Natural_Language_Calculator)**: solve a mathematical expression that is input as words in a string
-- [ ] **[Analyze Logs]()**:
+- [x] **[Analyze Logs]()**:
 - [ ] **[Attatch Actors To Movies]()**:
 - [ ] **[Find Sci-Fi Actors]()**:
 
