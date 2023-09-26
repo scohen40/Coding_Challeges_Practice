@@ -70,7 +70,7 @@ As the list grows it will be reorganized for ease of browsing.
 - [x] **[Word Count](Word_Count)**: count each word in a string
 - [x] **[Natural Language Calculator](Natural_Language_Calculator)**: solve a mathematical expression that is input as words in a string
 - [x] **[Analyze Logs]()**: create a dictionary with logging statistics
-- [ ] **[Movies Dataset Prompts]()**: sql, BFS, and DFS
+- [ ] **[Movies Dataset Prompts](Movies_Dataset_Prompts)**: sql, BFS, and DFS
     * [ ] **[Read and Parse a Large CSV]()**: load CSV data
     * [ ] **[Find Sci-Fi Actors]()**: execute queries to attatch actors to their movies
     * [ ] **[Six Degrees of Kevin Bacon]()**: use Breadth First Search or Depth First Search to find any actor within 6 degrees of separation
