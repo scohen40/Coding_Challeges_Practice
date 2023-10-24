@@ -68,6 +68,30 @@ with open('../input/the-movies-dataset/movies_metadata.csv', newline='') as movi
 
 pp(movies_index.get("862"))
 
+## next, read in the entire credits.csv file
+## create a similar dictionary for credits, like so:
+
+# credits_index = {
+#     "31": {
+#         'movie_id': '862',
+#         'cast_id': 14, 
+#         'character': 'Woody (voice)', 
+#         'credit_id': '52fe4284c3a36847f8024f95', 
+#         'gender': 2, 
+#         'id': 31, 
+#         'name': 'Tom Hanks', 
+#         'order': 0, 
+#         'profile_path': '/pQFoyx7rp09CJTAb932F2g8Nlho.jpg',
+#         'movies': [movie_ids go here]
+#     }
+# }
+
+## The third field in the CSV, 'id', is the ID of the movie they're in, so it will match your movies_index above
+## As you create a credits index, also attach each cast & crew member to it's movie, 
+## by adding it to the "credits" array from the movie dict above
+# import csv
+# import pprint
+# pp = pprint.pprint
 
 """
 Problem 2: Find All Sci-Fi actors
