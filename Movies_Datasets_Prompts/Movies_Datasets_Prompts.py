@@ -8,10 +8,65 @@ Next, read in the entire credits.csv file
 The third field in the CSV, 'id', is the ID of the movie they're in, so it will match your movies_index
 As you create a credits index, also attach each cast & crew member to it's movie, by adding it to the "credits" array from the movie dict within the movie index. Each credit has a field, "id", which is unique to the actor or crewmember- that way if you encounter a sound engineer named "Tom Hanks", you can distinguish between them.
 """
+import csv
+import pprint
+pp = pprint.pprint
+
+
+counter = 0
+columns = []
+
+
+movies_index = {}
+
+credits_index = {}
+
+
+with open('../input/the-movies-dataset/movies_metadata.csv', newline='') as movies_metadata_file:
+    reader = csv.reader(movies_metadata_file)
+    
+    for row in reader:
+#         print("Raw row", row)
+        movie = {}
+        if counter == 0: ## header row
+            columns = row
+#             print(columns)
+            
+        else:
+            column_index = 0
+            if len(row) == len(columns):
+                for column in columns:
+                    movie[column] = row[column_index]
+                    if column == "genres":
+                        movie[column] = eval(row[column_index])
+                    column_index += 1
+#         pp(movie)
+        movie["credits"] = []
+        #print("New Row ------------------")
+        if movie.get('id', False):
+            movies_index[movie["id"]] = movie
+        counter += 1
+        
+        if counter > 10:
+            break
+# print("Movies:")            
+# pp(movies_index)
 
 
 
+## Above is a loop to read the entire movies_metadata.csv file and create a dictionary that indexes each movie by ID.
+## example (with just one movie):
 
+# movies_index = {
+#     "862": {
+#         "original_title": "Toy Story",
+#         "credits": []
+#     }
+# }
+
+## so that you can find movies by their ID like so:
+
+pp(movies_index.get("862"))
 
 
 """
