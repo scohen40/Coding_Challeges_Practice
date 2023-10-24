@@ -93,6 +93,63 @@ pp(movies_index.get("862"))
 # import pprint
 # pp = pprint.pprint
 
+counter = 0
+columns = []
+
+# credits_index = {}
+
+with open('../input/the-movies-dataset/credits.csv', newline='') as credits_file:
+    reader = csv.reader(credits_file)
+    
+    for row in reader:
+#         print("Raw row", row)
+        credit = {}
+        if counter == 0: ## header row
+            columns = row
+#             print(columns)
+            
+        else:
+            column_index = 0
+            if len(row) == len(columns):
+                for column in columns:
+                    credit[column] = row[column_index]
+                    if column == "genres":
+                        credit[column] = eval(row[column_index])
+                    column_index += 1
+#         pp(credit)
+
+#         print("New Row ------------------")
+        if credit.get('id', False):
+            credits_index[credit["id"]] = credit
+            id = credit.get('id')
+            print(id)
+            
+        
+        #add the credit cast and crew to the movies list by id      
+        if counter > 0:
+            print(movies_index.get(id).get("credits"))
+#             pp(movies_index.get(id))
+            pp(credits_index.get(id))
+#             cast = credits_index.get(id).get("cast", [])
+#             pp(cast)
+#             crew = credits_index.get(id).get("crew")
+#             pp(crew)
+#             cast_and_crew = credits_index.get(id).get("cast", []) + credits_index.get(id).get("crew")
+
+#         if movies_index.get(id, False):
+            
+#             movies_index[id]["credits"] = movies_index[id].get("credits", []).append(credit)
+#             pp(movies_index.get(id).get("credits"))
+            
+        
+        counter += 1
+        
+        if counter > 10:
+            break
+            
+print("Credits:")            
+# pp(credits_index)
+
 """
 Problem 2: Find All Sci-Fi actors
 Now that we know which Actors and Crew (all credits) appeared in which films, we want to
