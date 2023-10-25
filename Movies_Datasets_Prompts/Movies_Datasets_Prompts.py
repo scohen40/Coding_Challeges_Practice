@@ -96,7 +96,7 @@ pp(movies_index.get("862"))
 counter = 0
 columns = []
 
-# credits_index = {}
+credits_index = {}
 
 with open('../input/the-movies-dataset/credits.csv', newline='') as credits_file:
     reader = csv.reader(credits_file)
@@ -112,30 +112,43 @@ with open('../input/the-movies-dataset/credits.csv', newline='') as credits_file
             column_index = 0
             if len(row) == len(columns):
                 for column in columns:
-                    credit[column] = row[column_index]
-                    if column == "genres":
-                        credit[column] = eval(row[column_index])
+                    credit[column] = eval(row[column_index])
                     column_index += 1
 #         pp(credit)
 
 #         print("New Row ------------------")
-        if credit.get('id', False):
-            credits_index[credit["id"]] = credit
-            id = credit.get('id')
-            print(id)
+
+        ## add each staff_member to the credits index using the id field 
+        if counter > 0:
+            cast = credit.get("cast", [])
+            crew = credit.get("crew", [])
+            cast_and_crew = cast + crew
+            movie_id = str(credit.get("id"))
+#             pp(cast_and_crew)
+            ##go through each staff member to add them to their movie and then add to the credits index
+            for staff_member in cast_and_crew:
+                staff_id = staff_member.get("id")
+#                 pp(staff_member)
+                ##add the staff_member to the credit_index dictionary by the id, if it isn't already in there, and add the movie to the staff's movie list
+                if not credits_index.get(staff_id, False):
+#                     print('adding')
+                    staff_member["movies"] = [movie_id]
+                    staff_member["movie_id"] = movie_id
+#                     pp(staff_member)
+                    credits_index[staff_id] = staff_member
+                else: 
+            ##ISSUE WITH THIS PART: If we are just adding movies for every time the same id comes up, the credit info is lost by not adding the individual credits by the credit id's. Each person might play different roles in different movies. 
+                    if movie_id not in credits_index[staff_id]['movies']:
+                        credits_index[staff_id]['movies'].append(movie_id)
+                ##add the staff_member to the credits array in the movies index using the movie id in the credit  
+                if movies_index.get(movie_id, False):
+#                     print('adding to movie credits')
+                    movies_index[movie_id]["credits"].append(staff_member)
+#                     pp(movies_index[movie_id])
+        
             
         
-        #add the credit cast and crew to the movies list by id      
-        if counter > 0:
-            print(movies_index.get(id).get("credits"))
-#             pp(movies_index.get(id))
-            pp(credits_index.get(id))
-#             cast = credits_index.get(id).get("cast", [])
-#             pp(cast)
-#             crew = credits_index.get(id).get("crew")
-#             pp(crew)
-#             cast_and_crew = credits_index.get(id).get("cast", []) + credits_index.get(id).get("crew")
-
+        
 #         if movies_index.get(id, False):
             
 #             movies_index[id]["credits"] = movies_index[id].get("credits", []).append(credit)
@@ -147,8 +160,10 @@ with open('../input/the-movies-dataset/credits.csv', newline='') as credits_file
         if counter > 10:
             break
             
-print("Credits:")            
+# print("Credits:")            
+# pp(credits_index.get("31"))
 # pp(credits_index)
+pp(movies_index)
 
 """
 Problem 2: Find All Sci-Fi actors
