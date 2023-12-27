@@ -69,11 +69,11 @@ As the list grows it will be reorganized for ease of browsing.
 - [x] **[Letter Count](Letter_Count)**: count each letter in a string
 - [x] **[Word Count](Word_Count)**: count each word in a string
 - [x] **[Natural Language Calculator](Natural_Language_Calculator)**: solve a mathematical expression that is input as words in a string
-- [x] **[Analyze Logs]()**: create a dictionary with logging statistics
+- [x] **[Analyze Logs](Analyze_Logs)**: create a dictionary with logging statistics
 - [ ] **[Movies Dataset Prompts](Movies_Dataset_Prompts)**: sql, BFS, and DFS, edge list, each prompt solution builds on the one before it
-    * [ ] **[Prompt 1 - Read and Parse a Large CSV](Movies_Dataset_Prompts/Movies_Dataset_Prompt_1)**: load CSV data then execute queries to attatch actors to their movies
-    * [ ] **[Prompt 2 - Find Sci-Fi Actors](Movies_Dataset_Prompts/Movies_Dataset_Prompt_2)**: execute queries to find all sci-fi film actors, all movies with Tom Hanks, and all movies with Tom Hanks and Tim Allen
-    * [ ] **[Prompt 3 - Six Degrees of Kevin Bacon](Movies_Dataset_Prompts/Movies_Dataset_Prompt_3)**: use Breadth First Search or Depth First Search to find any actor within 6 degrees of separation using the created Edge List
+    * [ ] **[Prompt 1 - Read and Parse a Large CSV](Movies_Dataset_Prompts/Movies_Dataset_Prompt_1.py)**: load CSV data then execute queries to attatch actors to their movies
+    * [ ] **[Prompt 2 - Find Sci-Fi Actors](Movies_Dataset_Prompts/Movies_Dataset_Prompt_2.py)**: execute queries to find all sci-fi film actors, all movies with Tom Hanks, and all movies with Tom Hanks and Tim Allen
+    * [ ] **[Prompt 3 - Six Degrees of Kevin Bacon](Movies_Dataset_Prompts/Movies_Dataset_Prompt_3.py)**: use Breadth First Search or Depth First Search to find any actor within 6 degrees of separation using the created Edge List
 
 
 ## Contributing
