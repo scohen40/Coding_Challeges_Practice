@@ -164,24 +164,3 @@ with open('../input/the-movies-dataset/credits.csv', newline='') as credits_file
 # pp(credits_index.get("31"))
 # pp(credits_index)
 pp(movies_index)
-
-"""
-Problem 2: Find All Sci-Fi actors
-Now that we know which Actors and Crew (all credits) appeared in which films, we want to
-
-find all actors and crew that appeared in "Science Fiction" genre films, and display their names next to how many Science Fiction films they appeared in, from most to least
-find all movies that Tom Hanks has appeared in
-find all movies where both Tom Hanks and Tim Allen have appeared
-(Copy and paste the above code into a this cell to keep your solutions separated (if desired))
-"""
-
-
-"""
-Problem 3: Six Degrees of Kevin Bacon
-There's a game, called Six Degrees of Kevin Bason. It goes like this: Pick any actor, and you can find within 6 degrees of separation, a movie featuring Kevin Bacon.
-In order to solve it with an algorithm, we'll need to use either Breadth First Search or Depth First Search.
-
-Oh by the way you already learned to use graphs in the first question, surprise! They're not as scary as they seem. It's just the idea that "things have relationships".
-When you added every cast to it's movie, and every movie to it's cast, you created what's called an edge list.
-An edge list is a fancy graph-search term meaning "a list of the relationships between every thing and every other thing indexed by the name of the thing". Every relationship table in SQL is an edge list. Sometimes it looks like this:
-"""
