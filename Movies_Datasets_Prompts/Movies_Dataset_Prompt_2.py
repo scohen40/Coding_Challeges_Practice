@@ -194,3 +194,18 @@ sorted_crew = sorted(sci_fi_crew.items(), key=lambda item: item[1]["sci_fi_movie
 for crewmember in sorted_crew[0:11]:
   print(crewmember[1].get("name"), crewmember[1].get("sci_fi_movie_count"))
   # pp(crewmember)
+
+
+#####FIND ALL TOM HANKS MOVIES 
+tom_hanks_movies= [];
+#search through the credits_index for tom hanks 
+# pp(credits_index)
+for credit_id in credits_index:
+  credit = credits_index[credit_id]
+  if (credit.get('name') == 'Tom Hanks'):
+    #add all of his movie ids to the tom hanks index
+    tom_hanks_movies = credit.get("movies")
+    pp(credit)
+    break
+
+# pp(tom_hanks_movies)
